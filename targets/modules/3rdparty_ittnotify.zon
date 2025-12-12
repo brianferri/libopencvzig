@@ -1,0 +1,11 @@
+.{
+    .include = .{
+        "3rdparty/ittnotify/include",
+        "3rdparty/ittnotify/src/ittnotify",
+    },
+    .files = .{
+        "3rdparty/ittnotify/src/ittnotify/ittnotify_static.c",
+        "3rdparty/ittnotify/src/ittnotify/jitprofiling.c",
+    },
+    .headers = .{},
+}

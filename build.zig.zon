@@ -1,0 +1,17 @@
+.{
+    .name = .libopencvzig,
+    .version = "0.0.0",
+    .fingerprint = 0xc2b572d54a7a4c3a,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{
+        .opencv = .{ .path = "opencv" },
+        .ade = .{ .path = "thirdparty/ade" },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "bindings",
+        "opencv",
+    },
+}

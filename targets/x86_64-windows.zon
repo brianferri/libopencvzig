@@ -1,0 +1,23 @@
+.{
+    .include = .{
+        "platforms/windows",
+    },
+    .files = .{
+        "modules/videoio/src/cap_winrt/MediaStreamSink.cpp",
+        "modules/videoio/src/cap_winrt/CaptureFrameGrabber.cpp",
+        "modules/videoio/src/cap_winrt_video.cpp",
+        "modules/videoio/src/cap_winrt_bridge.cpp",
+        "modules/videoio/src/cap_winrt_capture.cpp",
+
+        "modules/highgui/src/window_winrt_bridge.cpp",
+        "modules/highgui/src/window_winrt.cpp",
+    },
+    .flags = .{
+        "-DWIN32",
+        "-D_CRT_SECURE_NO_WARNINGS",
+        "-D_CRT_NONSTDC_NO_DEPRECATE",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+    },
+    .modules = .{},
+}

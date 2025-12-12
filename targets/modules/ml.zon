@@ -1,0 +1,30 @@
+.{
+    .include = .{
+        "modules/ml/include",
+        "modules/ml/include/opencv2",
+        "modules/ml/include/opencv2/ml",
+    },
+    .files = .{
+        "modules/ml/src/svmsgd.cpp",
+        "modules/ml/src/tree.cpp",
+        "modules/ml/src/data.cpp",
+        "modules/ml/src/inner_functions.cpp",
+        "modules/ml/src/gbt.cpp",
+        "modules/ml/src/nbayes.cpp",
+        "modules/ml/src/em.cpp",
+        "modules/ml/src/boost.cpp",
+        "modules/ml/src/ann_mlp.cpp",
+        "modules/ml/src/testset.cpp",
+        "modules/ml/src/knearest.cpp",
+        "modules/ml/src/lr.cpp",
+        "modules/ml/src/svm.cpp",
+        "modules/ml/src/kdtree.cpp",
+        "modules/ml/src/rtrees.cpp",
+    },
+    .headers = .{
+        .{ .source = "modules/ml/include/opencv2/ml.hpp", .dest = "opencv2/ml.hpp" },
+        .{ .source = "modules/ml/include/opencv2/ml/ml.hpp", .dest = "opencv2/ml/ml.hpp" },
+        .{ .source = "modules/ml/include/opencv2/ml/ml.inl.hpp", .dest = "opencv2/ml/ml.inl.hpp" },
+    },
+}
+

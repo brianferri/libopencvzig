@@ -1,0 +1,25 @@
+.{
+    .include = .{
+        "modules/photo/include",
+        "modules/photo/include/opencv2/photo",
+    },
+    .files = .{
+        "modules/photo/src/seamless_cloning.cpp",
+        "modules/photo/src/hdr_common.cpp",
+        "modules/photo/src/merge.cpp",
+        "modules/photo/src/npr.cpp",
+        "modules/photo/src/denoising.cuda.cpp",
+        "modules/photo/src/align.cpp",
+        "modules/photo/src/contrast_preserve.cpp",
+        "modules/photo/src/denoise_tvl1.cpp",
+        "modules/photo/src/denoising.cpp",
+        "modules/photo/src/tonemap.cpp",
+        "modules/photo/src/inpaint.cpp",
+        "modules/photo/src/calibrate.cpp",
+        "modules/photo/src/seamless_cloning_impl.cpp",
+    },
+    .headers = .{
+        .{ .source = "modules/photo/include/opencv2/photo.hpp", .dest = "opencv2/photo.hpp" },
+    },
+}
+

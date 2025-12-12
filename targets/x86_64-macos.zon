@@ -1,0 +1,18 @@
+.{
+    .include = .{
+        "platforms/osx",
+    },
+    .files = .{
+        "modules/highgui/src/window_cocoa.mm",
+        "modules/videoio/src/cap_avfoundation.mm",
+    },
+    .flags = .{
+        "-DMACOSX",
+        "-pthread",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+        "-DHAVE_AVFOUNDATION",
+        "-DHAVE_COCOA",
+    },
+    .modules = .{},
+}

@@ -1,0 +1,31 @@
+.{
+    .include = .{
+        "modules/stitching/include",
+        "modules/stitching/include/opencv2",
+        "modules/stitching/include/opencv2/stitching",
+    },
+    .files = .{
+        "modules/stitching/src/exposure_compensate.cpp",
+        "modules/stitching/src/matchers.cpp",
+        "modules/stitching/src/motion_estimators.cpp",
+        "modules/stitching/src/stitcher.cpp",
+        "modules/stitching/src/util.cpp",
+        "modules/stitching/src/warpers.cpp",
+    },
+    .headers = .{
+        .{ .source = "modules/stitching/include/opencv2/stitching.hpp", .dest = "opencv2/stitching.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/warpers.hpp", .dest = "opencv2/stitching/warpers.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/warpers.hpp", .dest = "opencv2/stitching/detail/warpers.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp", .dest = "warpers_inl.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/warpers.hpp", .dest = "warpers.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/matchers.hpp", .dest = "opencv2/stitching/detail/matchers.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp", .dest = "opencv2/stitching/detail/motion_estimators.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/util.hpp", .dest = "util.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/util_inl.hpp", .dest = "util_inl.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/camera.hpp", .dest = "opencv2/stitching/detail/camera.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/camera.hpp", .dest = "camera.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp", .dest = "opencv2/stitching/detail/exposure_compensate.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp", .dest = "opencv2/stitching/detail/seam_finders.hpp" },
+        .{ .source = "modules/stitching/include/opencv2/stitching/detail/blenders.hpp", .dest = "opencv2/stitching/detail/blenders.hpp" },
+    },
+}

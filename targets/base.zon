@@ -1,0 +1,47 @@
+.{
+    .include = .{
+        "include",
+        "include/opencv2",
+
+        "3rdparty/include",
+        "hal",
+    },
+    .files = .{},
+    .flags = .{
+        "-DCVAPI_EXPORTS",
+        "-D_DEBUG",
+        "-DHAVE_OPENCL",
+        "-DHAVE_PTHREAD",
+        // "-DHAVE_GSTREAMER",
+        // "-DOPENCV_WITH_ITT=1",
+        "-DCV_OCL4DNN=1",
+        "-D_USE_MATH_DEFINES",
+        "-D__OPENCV_BUILD=1",
+        "-D__STDC_CONSTANT_MACROS",
+        "-D__STDC_FORMAT_MACROS",
+        "-D__STDC_LIMIT_MACROS",
+
+        "-fPIC",
+    },
+    .modules = .{
+        "core",
+        "calib3d",
+        "dnn",
+        "features2d",
+        "flann",
+        "highgui",
+        "imgcodecs",
+        "imgproc",
+        "ml",
+        "objdetect",
+        "photo",
+        "stitching",
+        "video",
+        "videoio",
+        "gapi",
+
+        "3rdparty_include",
+        "3rdparty_ittnotify",
+        "3rdparty_protobuf",
+    },
+}

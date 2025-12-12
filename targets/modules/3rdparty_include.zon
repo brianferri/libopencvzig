@@ -1,0 +1,11 @@
+.{
+    .include = .{
+        "3rdparty/include/opencl/1.2",
+        "3rdparty/include/opencl/1.2/CL",
+    },
+    .files = .{},
+    .headers = .{
+        .{ .source = "3rdparty/include/opencl/1.2/CL/cl.h", .dest = "OpenCL/cl.h" },
+        .{ .source = "3rdparty/include/opencl/1.2/CL/cl.h", .dest = "CL/cl.h" },
+    },
+}

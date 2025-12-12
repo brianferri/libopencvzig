@@ -1,0 +1,25 @@
+.{
+    .include = .{
+        "platforms/linux",
+    },
+    .files = .{
+        "modules/videoio/src/cap_v4l.cpp",
+
+        // "modules/imgproc/src/imgwarp.avx2.cpp",
+        // "modules/imgproc/src/resize.lasx.cpp",
+        // "modules/imgproc/src/resize.avx2.cpp",
+        // "modules/imgproc/src/resize.sse4_1.cpp",
+        // "modules/imgproc/src/imgwarp.sse4_1.cpp",
+        // "modules/imgproc/src/corner.avx.cpp",
+        // "modules/imgproc/src/imgwarp.lasx.cpp",
+    },
+    .flags = .{
+        "-Dlinux",
+        "-pthread",
+        "-Wno-missing-field-initializers",
+        "-Wno-switch",
+        "-DHAVE_V4L",
+    },
+    .modules = .{},
+}
+
